@@ -12,19 +12,21 @@
 #import "AddViewController.h"
 #import "SVProgressHUD.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, AddViewControllerDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, AddViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 /** person对象模型数组 */
 @property (nonatomic, copy) NSArray *arrPerson;
-/** <#content#> */
+/** coreData管理类 */
 @property (nonatomic, strong) CoreDataManager *coreDataManager;
 
 @end
 
 @implementation ViewController
 
-
+/*
+ * 懒加载
+ */
 - (CoreDataManager *)coreDataManager
 {
     if (!_coreDataManager) {
@@ -162,6 +164,17 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
+#pragma mark - UISearchBarDelegate
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    if ([searchText isEqualToString:@""] || searchText == nil) {
+        _arrPerson =  [self.coreDataManager queryWithClassM:[Person class]];
+    } else {
+        _arrPerson =  [self.coreDataManager queryWithClassM:[Person class] predicateStr: [NSString stringWithFormat:@"name contains [cd]'%@'", searchText]];
+    }
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - AddViewControllerDelegate
 - (void)addViewControllerWithVC:(AddViewController *)vc successWithPerson:(Person *)person {
     NSMutableArray *arrM = [NSMutableArray arrayWithArray:self.arrPerson];
@@ -171,8 +184,6 @@
     //    self.arrPerson =  [self.coreDataManager queryWithClassM:[Person class]];
     [self.tableView reloadData];
 }
-
-
 
 
 @end
