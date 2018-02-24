@@ -7,7 +7,7 @@
 //
 
 #import "AddViewController.h"
-#import "CoreDataManager.h"
+#import "ZRCoreDataManager.h"
 #import "Person.h"
 #import "NSString+Extension.h"
 #import "SVProgressHUD.h"
@@ -15,15 +15,15 @@
 @interface AddViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *descTextField;
-@property (nonatomic, strong) CoreDataManager *coreDataManager;
+@property (nonatomic, strong) ZRCoreDataManager *coreDataManager;
 @end
 
 @implementation AddViewController
 
-- (CoreDataManager *)coreDataManager
+- (ZRCoreDataManager *)coreDataManager
 {
     if (!_coreDataManager) {
-        _coreDataManager = [CoreDataManager shareManager];
+        _coreDataManager = [ZRCoreDataManager shareManager];
     }
     return _coreDataManager;
 }

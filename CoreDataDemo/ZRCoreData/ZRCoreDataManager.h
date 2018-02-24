@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CoreDataManager : NSObject
+@interface ZRCoreDataManager : NSObject
 
 /**
  *  单例

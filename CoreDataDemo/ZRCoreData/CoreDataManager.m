@@ -7,24 +7,24 @@
 //  Copyright © 2016年 monkey. All rights reserved.
 //
 
-#import "CoreDataManager.h"
+#import "ZRCoreDataManager.h"
 #import <CoreData/CoreData.h>
 #import <objc/runtime.h>
 
 #define SQLITENAME @"person.sqlite"
 #define CLASS_NAME(PRAM) NSStringFromClass([PRAM class])
 
-@interface CoreDataManager ()
+@interface ZRCoreDataManager ()
 /** NSManagedObjectContext对象 */
 @property (nonatomic, strong) NSManagedObjectContext *context;
 @end
 
-@implementation CoreDataManager
+@implementation ZRCoreDataManager
 
 
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
-    static CoreDataManager *instance;
+    static ZRCoreDataManager *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [super allocWithZone:zone];

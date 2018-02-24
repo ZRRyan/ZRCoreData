@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "CoreDataManager.h"
+#import "ZRCoreDataManager.h"
 #import "Person.h"
 #import "AddViewController.h"
 #import "SVProgressHUD.h"
@@ -18,7 +18,7 @@
 /** person对象模型数组 */
 @property (nonatomic, copy) NSArray *arrPerson;
 /** coreData管理类 */
-@property (nonatomic, strong) CoreDataManager *coreDataManager;
+@property (nonatomic, strong) ZRCoreDataManager *coreDataManager;
 
 @end
 
@@ -27,10 +27,10 @@
 /*
  * 懒加载
  */
-- (CoreDataManager *)coreDataManager
+- (ZRCoreDataManager *)coreDataManager
 {
     if (!_coreDataManager) {
-        _coreDataManager = [CoreDataManager shareManager];
+        _coreDataManager = [ZRCoreDataManager shareManager];
     }
     return _coreDataManager;
 }
