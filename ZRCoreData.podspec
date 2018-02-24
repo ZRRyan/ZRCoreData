@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "ZRCoreData"
-s.version      = "1.0.0"
+s.version      = "1.0.2"
 s.ios.deployment_target = '7.0'
 s.summary      = "A delightful setting interface framework."
 s.homepage     = "https://github.com/ZRRyan/ZRCoreData"
