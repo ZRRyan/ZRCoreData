@@ -11,7 +11,7 @@
 #import <CoreData/CoreData.h>
 #import <objc/runtime.h>
 
-#define SQLITENAME @"person.sqlite"
+#define SQLITENAME @"ZRCocoData.sqlite"
 #define CLASS_NAME(PRAM) NSStringFromClass([PRAM class])
 
 @interface ZRCoreDataManager ()
@@ -174,7 +174,7 @@
 }
 
 /**
- *  根据调价查询
+ *  根据条件查询
  *
  *  @param classM       实体类
  *  @param predicateStr 谓词条件

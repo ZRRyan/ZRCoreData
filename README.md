@@ -1,2 +1,4 @@
 # CoreDataDemo
-对CoreData的封装(增删改查)及简单demo
+
+具体实现目前不赘述，有待完善
+
