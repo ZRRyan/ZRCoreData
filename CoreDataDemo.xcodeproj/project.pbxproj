@@ -22,7 +22,7 @@
 		948CC4911D87F60C00489613 /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4901D87F60C00489613 /* CoreDataDemoTests.m */; };
 		948CC49C1D87F60C00489613 /* CoreDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC49B1D87F60C00489613 /* CoreDataDemoUITests.m */; };
 		948CC4AB1D87F61E00489613 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4A91D87F61E00489613 /* Model.xcdatamodeld */; };
-		948CC4AE1D87F63900489613 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4AD1D87F63900489613 /* CoreDataManager.m */; };
+		948CC4AE1D87F63900489613 /* ZRCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4AD1D87F63900489613 /* ZRCoreDataManager.m */; };
 		948CC4B11D88162700489613 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4B01D88162700489613 /* Person.m */; };
 		948CC4B41D88429100489613 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CC4B31D88429100489613 /* AddViewController.m */; };
 /* End PBXBuildFile section */
@@ -75,7 +75,7 @@
 		948CC49D1D87F60C00489613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948CC4AA1D87F61E00489613 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		948CC4AC1D87F63900489613 /* ZRCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRCoreDataManager.h; sourceTree = "<group>"; };
-		948CC4AD1D87F63900489613 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		948CC4AD1D87F63900489613 /* ZRCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRCoreDataManager.m; sourceTree = "<group>"; };
 		948CC4AF1D88162700489613 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		948CC4B01D88162700489613 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		948CC4B21D88429100489613 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				948CC4AC1D87F63900489613 /* ZRCoreDataManager.h */,
-				948CC4AD1D87F63900489613 /* CoreDataManager.m */,
+				948CC4AD1D87F63900489613 /* ZRCoreDataManager.m */,
 			);
 			path = ZRCoreData;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				940EECC41D8BB59800E2A9FD /* SVIndefiniteAnimatedView.m in Sources */,
 				948CC47B1D87F60C00489613 /* AppDelegate.m in Sources */,
 				948CC4B41D88429100489613 /* AddViewController.m in Sources */,
-				948CC4AE1D87F63900489613 /* CoreDataManager.m in Sources */,
+				948CC4AE1D87F63900489613 /* ZRCoreDataManager.m in Sources */,
 				940EECC81D8BB59800E2A9FD /* SVRadialGradientLayer.m in Sources */,
 				948CC4781D87F60C00489613 /* main.m in Sources */,
 				948CC4AB1D87F61E00489613 /* Model.xcdatamodeld in Sources */,
